@@ -26,6 +26,7 @@ Optimoidut JS-moduulit ovat kooltaan paljon pienempiä verrattuna muiden framewo
 Svelte v3.0.0 julkaistiin 21.4.2019 ja tuolloin Svelte alkoi vasta kerätä huomiota.
 
 -[Svelten github tähdet](https://bestofjs.org/projects/svelte)
+
 -[Framework vertailu](https://2018.stateofjs.com/front-end-frameworks/other-libraries/)
 
 Sveltessä komponentit kirjoitetaan käyttäen HTLM, CSS ja Javasctiptiä.
