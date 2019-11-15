@@ -23,6 +23,11 @@ Optimoidut JS-moduulit ovat kooltaan paljon pienempiä verrattuna muiden framewo
 
 -[Vertailua bundlejen koosta](https://pianomanfrazier.com/post/comparing-svelte-stencil/)
 
+Svelte v3.0.0 julkaistiin 21.4.2019 ja tuolloin Svelte alkoi vasta kerätä huomiota.
+
+-[Svelten github tähdet](https://bestofjs.org/projects/svelte)
+-[Framework vertailu](https://2018.stateofjs.com/front-end-frameworks/other-libraries/)
+
 Sveltessä komponentit kirjoitetaan käyttäen HTLM, CSS ja Javasctiptiä.
 
 Monet perinteiset frameworkit käyttää virtual-DOM tekniikka, mutta Svelte muokkaa DOM:ia suoraan, kun sovelluksen state muuttuu. Kuten Svelten sivustolla on kuvattu, DOM muutos tehdään [kirurgisesti](https://svelte.dev/).
@@ -44,25 +49,32 @@ Sveltessä data bindingia on luokan ja templaatin välillä. Nämä voi bindata 
 
 Sveltessä on kolme erilaista logiikkaa joita käytetään HTML joukossa.
 ```
-  {#if true}
-  {:else}
-  {/if}
+{#if user.loggedIn}
+	<button on:click={toggle}>
+		Log out
+	</button>
+{:else}
+	<button on:click={toggle}>
+		Log in
+	</button>
+{/if}
 
-  {#each cats as { name }, i}
-  {/each}
+{#each cats as { name }, i}
+	<li><a>{i + 1}: {name}</a></li>
+{/each}
 
-  {#await promise}
-  {:then number}
-  {:catch error}
-  {/await}
+{#await promise}
+	<p>...waiting</p>
+{:then number}
+	<p>The number is {number}</p>
+{:catch error}
+	<p style="color: red">{error.message}</p>
+{/await}
 ```
 
-#### Eventdispatch
+#### Events
 
-#### Svelte Props
-
-
-
+Eventtejä kutsutaan Sveltessä on:eventinNimi esimerkiksi on:click={suoritettava funktio}. Myös komponentit voivat lähettää eventtejä. Tämä toteutetaan [EventDispatcherin](https://svelte.dev/tutorial/component-events) avulla.
 
 <a id='13'></a>
 ### [1.3 Svelte app](#svelte)
