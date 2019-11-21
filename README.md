@@ -94,10 +94,6 @@ npm run dev
 Poistetaan boilerplate koodit App.svelte:stä
 
 Lisätään muotoilua ja kaksi sectionia
-#### Muista! 
-JS script tagehin
-css style tagehin
-html alle
 ```
 <!-- App.svelte -->
 
@@ -121,7 +117,6 @@ input {
 ```
 
 Lisätään hieman JS ja form jolla voidaan lisätä kirja myyntiin
-
 ```
 <!-- App.svelte -->
 
@@ -138,7 +133,6 @@ let books = [];
 ```
 
 Tehdään Book.svelte tiedosto ./scr juureen. Tehdään tästä "kortin" näköinen komponentti, mikä on helposti monistettavissa.
-
 ```
 <!-- Book.svelte -->
 
@@ -160,7 +154,6 @@ Tehdään Book.svelte tiedosto ./scr juureen. Tehdään tästä "kortin" näköi
     border-radius: 5px;
     background: white;
   }
-
   button {
     font: inherit;
     padding: 0.15rem 0.5rem;
@@ -169,7 +162,6 @@ Tehdään Book.svelte tiedosto ./scr juureen. Tehdään tästä "kortin" näköi
     color: white;
     cursor: pointer;
   }
-
   button:hover,
   button:active {
     box-shadow: 1px 1px 6px black;
@@ -204,10 +196,6 @@ Lisätään Svelten bind:value={} ja tehdään bindauksesta kaksisuuntainen!
 <!-- input tageihin bind: -->
 <input type="text" id="title" placeholder="Title" bind:value={title} />
 ```
-
-
-
-
 
 Lisätään napille toiminnallisuutta. Nyt kun pidetään mielessä se, että Book komponentti on moni käyttöinen, niin napin suorittama funktio halutaan tehdä siinä komponentissä mihin se on importattu, eli tässä tapauksessa App.svelte:ssä.
 
