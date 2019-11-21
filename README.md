@@ -44,7 +44,7 @@ Sveltessä komponentit ovat .svelte päättyisiä tiedostoja. Ne koostuu <script
 
 #### Binding
 
-Sveltessä data bindingia on luokan ja templaatin välillä. Nämä voi bindata yksi- tai kaksisuuntaisesti. Svelte käyttää {muuttujan-nimi} syntaksia bindauksissa. Esimerkissä lisää.
+Luokasta templaattiin tehdään ´´´<h1>{title}</h1>´´´ syntaksilla ja templaatista luokkaan ´´´<input bind:value={title} />´´´
 
 #### Logiikka
 
