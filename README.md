@@ -80,11 +80,9 @@ Eventtejä kutsutaan Sveltessä on:eventinNimi esimerkiksi on:click={suoritettav
 <a id='13'></a>
 ### [1.3 Svelte app](#svelte)
 
-Tehdään hyvin yksinkertainen kirjakauppa-appi, josta tulee ilmi Svelten yleisempiä piirteitä. Koska Sveltessä itsessään ei ole routing toimintoja niin tehdään appi yhdelle sivulle jakamalla se <hr/> tageilla. Svelteen löytyy monta hyvää kolmannen osapuolen routing kirjastoa esim [svelte-routing](https://github.com/EmilTholin/svelte-routing), mutta virallisesti kuuluisi käyttää Sapperin routeria.
+Tehdään hyvin yksinkertainen kirjakauppa-appi, josta tulee ilmi Svelten yleisempiä piirteitä. Koska Sveltessä itsessään ei ole routing toimintoja niin tehdään appi yhdelle sivulle jakamalla se ```<hr/>``` tageilla. Svelteen löytyy monta hyvää kolmannen osapuolen routing kirjastoa esim [svelte-routing](https://github.com/EmilTholin/svelte-routing), mutta virallisesti kuuluisi käyttää Sapperin routeria.
 
 Lataa VS Codeen Svelte extension
-
-Mene kansioon mihin haluat ladata Svelte boilerplaten
 
 ```
 npx degit sveltejs/template book-app
