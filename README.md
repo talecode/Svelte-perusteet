@@ -327,7 +327,7 @@ function buyBook(event) {}
 ### [1.4 Tehtävät](#svelte)
 
 #### Tehtävä 1
-Tee tehtava.gif mukainen toiminnallisuus ja näkymä annettuihin harjoitus lähtöihin, jotka on kommentoitu koodi esimerkkiin. Jos et ollut tunnilla niin lataa esimerkki ``` täältä ```.
+Tee tehtava.gif mukainen toiminnallisuus ja näkymä annettuihin harjoitus lähtöihin, jotka on kommentoitu koodi esimerkkiin. Jos et ollut tunnilla niin lataa esimerkki ``` git clone https://github.com/talecode/Svelte.git ```.
 
 Vinkkejä:
 
