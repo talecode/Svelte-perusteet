@@ -75,7 +75,7 @@ Sveltessä on kolme erilaista logiikkaa joita käytetään HTML joukossa.
 
 #### Events
 
-Eventtejä kutsutaan Sveltessä ```on:click={suoritettava funktio}```. Myös komponentit voivat lähettää eventtejä. Tämä toteutetaan [EventDispatcherin](https://svelte.dev/tutorial/component-events) avulla.
+Eventtejä kutsutaan Sveltessä ```<button on:click={suoritettava funktio}></button>```. Myös komponentit voivat lähettää eventtejä. Tämä toteutetaan [EventDispatcherin](https://svelte.dev/tutorial/component-events) avulla.
 
 <a id='13'></a>
 ### [1.3 Svelte app](#svelte)
