@@ -44,7 +44,7 @@ Sveltessä komponentit ovat .svelte päättyisiä tiedostoja. Ne koostuu ```<scr
 
 #### Binding
 
-Luokasta templaattiin tehdään ```h1>{title}</h1``` syntaksilla ja templaatista luokkaan ```input bind:value={title} ```
+Luokasta templaattiin tehdään ```<h1>{title}</h1>``` syntaksilla ja templaatista luokkaan ```<input bind:value={title} />```
 
 #### Logiikka
 
