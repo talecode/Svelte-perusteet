@@ -40,7 +40,7 @@ Svelte itsessään on tarkoitettu hyvin pienien web-sovellusten tekoon. Laajempi
 
 #### Komponentit
 
-Sveltessä komponentit ovat .svelte päättyisiä tiedostoja. Ne koostuu <script></script> tageista joiden sisällä on JavaScritpiä, <style></style> tageista joiden sisällä on CSS ja HTML5 tageista.
+Sveltessä komponentit ovat .svelte päättyisiä tiedostoja. Ne koostuu ```<script></script>```, ```<style></style>``` ja HTML tageista.
 
 #### Binding
 
