@@ -17,11 +17,11 @@
 <a id='11'></a>
 ### [1.1 Perusteet](#svelte)
 
-Svelte on uudenlainen "framework" joka toimii oikeastaan vain kääntäjänä(compiler). Sveltellä rakennettu sovellus kootaan etukäteen(is compiled beforehand), hyvin optimoiduksi standalone JavaScript moduuleiksi. Tämän ansiosta selaimen suorittama työ saadaan paljon pienemmäksi, kun verrataan perinteisillä frameworkeillä toteutettuihin web-sovelluksiin, joissa selain suorittaa myös frameworkin omaa koodia. 
+Svelte on uudenlainen "framework" joka toimii oikeastaan vain kääntäjänä(compiler). Sveltellä rakennettu sovellus kootaan etukäteen(is compiled beforehand), hyvin optimoiduksi standalone JavaScriptiksi. Tämän ansiosta selaimen suorittama työ saadaan paljon pienemmäksi, kun verrataan perinteisillä frameworkeillä toteutettuihin web-sovelluksiin, joissa selain suorittaa myös frameworkin omaa koodia. 
 
 Monet perinteiset frameworkit käyttää virtual-DOM tekniikka, mutta Svelte muokkaa DOM:ia suoraan, kun sovelluksen state muuttuu. Kuten Svelten sivustolla on kuvattu, DOM muutos tehdään [kirurgisesti](https://svelte.dev/).
 
-Optimoidut JS-moduulit ovat kooltaan paljon pienempiä verrattuna muiden frameworkkejen buildaamiin moduuleihin. Esimerkiksi [tämä](http://svelte-todomvc.surge.sh/) pieni Svelte todo appi on vain 3.6kb zipattuna, kun vertailun vuoksi React + ReactDOM ilman mitään koodia on 45kb zipattuna. [Lähde](https://svelte.dev/blog/frameworks-without-the-framework)
+Optimoidut JavaScript tiedostot ovat kooltaan paljon pienempiä verrattuna muiden frameworkkejen buildaamiin tiedostoihin. Esimerkiksi [tämä](http://svelte-todomvc.surge.sh/) pieni Svelte todo appi on vain 3.6kb zipattuna, kun vertailun vuoksi React + ReactDOM ilman mitään koodia on 45kb zipattuna. [Lähde](https://svelte.dev/blog/frameworks-without-the-framework)
 
 -[Vertailua bundlejen koosta](https://pianomanfrazier.com/post/comparing-svelte-stencil/)
 
