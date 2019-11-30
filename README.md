@@ -91,11 +91,20 @@ npm install
 npm run dev
 ```
 
-Poistetaan boilerplate koodit App.svelte:stä
-
-Lisätään muotoilua ja kaksi sectionia
+Korvataan boilerplate koodit App.svelte:stä ja lisätään yksi uusi komponentti - Book.svelte
 ```
 <!-- App.svelte -->
+<script>
+
+  import Book from "./Book.svelte";
+
+  let title = "";
+  let price = "";
+  let description = "";
+
+  let books = [];
+
+</script>
 
 section {
   width: 30rem;
@@ -107,6 +116,10 @@ input {
 
 <section>
   <h1>Sell your book!</h1>
+  <input type="text" id="title" placeholder="Title" value={title} />
+  <input type="number" id="price" placeholder="Price" value={price} />
+  <input type="text" id="title" placeholder="Description" value={description} />
+  <Book bookTitle={title} bookPrice={price} bookDescription={description} buttonText="Sell" />
 </section>
 
 <hr />
@@ -116,23 +129,7 @@ input {
 </section>
 ```
 
-Lisätään hieman JS ja form jolla voidaan lisätä kirja myyntiin
-```
-<!-- App.svelte -->
-
-let title = "";
-let price = "";
-let description = "";
-
-let books = [];
-
-<!-- HTML ensimmäiseen sectioniin -->
-<input type="text" id="title" placeholder="Title" value={title} />
-<input type="number" id="price" placeholder="Price" value={price} />
-<input type="text" id="title" placeholder="Description" value={description} />
-```
-
-Tehdään Book.svelte tiedosto ./scr juureen. Tehdään tästä "kortin" näköinen komponentti, mikä on helposti monistettavissa.
+./scr juureen.
 ```
 <!-- Book.svelte -->
 
@@ -174,19 +171,6 @@ Tehdään Book.svelte tiedosto ./scr juureen. Tehdään tästä "kortin" näköi
   <p>{bookDescription}</p>
   <button on:click={submitBook}>{buttonText}</button>
 </div>
-```
-
-Importataan Book.svelte ja käytetään sitä ensimmäisessä sectionissa
-```
-<!-- App.svelte -->
-
-import Book from "./Book.svelte";
-
-<Book
-bookTitle={title}
-bookPrice={price}
-bookDescription={description}
-buttonText="Sell" />
 ```
 
 Lisätään Svelten bind:value={} ja tehdään bindauksesta kaksisuuntainen!
