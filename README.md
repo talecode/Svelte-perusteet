@@ -234,9 +234,11 @@ Laitetaan sitten ostetut kirjat näkyville käyttäen Svelten each toimintoa
         bookTitle={book.bookTitle}
         bookPrice={book.bookPrice}
         bookDescription={book.bookDescription}
-        buttonText="Buy" />
+        buttonText="Buy"
+        on:Dispatch={() => {}} />
     {/each}
   {/if}
+  
 ```
 
 Käyttäjä ystävällistä toiminnallisuutta Book komponenttiin
@@ -246,7 +248,6 @@ Käyttäjä ystävällistä toiminnallisuutta Book komponenttiin
 {#if bookTitle || bookPrice || bookDescription}
 	<!-- DIV -->
 {/if}
-
 
 {#if bookTitle && bookPrice && bookDescription}
 	<!-- BUTTON -->
@@ -259,21 +260,9 @@ Lopuksi lisätään lähdöt tehtävälle...
 
 // TEHTÄVÄ
 let buyedBooks = [];
-
 $: total = "";
-
-function buyBook(event) {}
+function buyBook(event) {} // Kutsu tätä Buy napista 
 // TEHTÄVÄ
-
-<!-- Buy napille funktion kutsu -->
-<Book
-  bookTitle={book.bookTitle}
-  bookPrice={book.bookPrice}
-  bookDescription={book.bookDescription}
-  buttonText="Buy"
-  on:Dispatch={buyBook} />
-
-<!-- Alimmaiseksi sectio mihin tulee ostetut kirjat -->
 
 <!-- TEHTÄVÄ -->
 <hr />
