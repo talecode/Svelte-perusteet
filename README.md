@@ -267,11 +267,11 @@ function buyBook(event) {}
 
 <!-- Buy napille funktion kutsu -->
 <Book
-  title={book.title}
-  price={book.price}
-  description={book.description}
+  bookTitle={book.bookTitle}
+  bookPrice={book.bookPrice}
+  bookDescription={book.bookDescription}
   buttonText="Buy"
-  on:submitBook={buyBook} />
+  on:Dispatch={buyBook} />
 
 <!-- Alimmaiseksi sectio mihin tulee ostetut kirjat -->
 
