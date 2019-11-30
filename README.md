@@ -258,12 +258,6 @@ Lopuksi lisätään lähdöt tehtävälle...
 ```
 <!-- App.svelte -->
 
-// TEHTÄVÄ
-let buyedBooks = [];
-$: total = "";
-function buyBook(event) {} // Kutsu tätä Buy napista 
-// TEHTÄVÄ
-
 <!-- TEHTÄVÄ -->
 <hr />
 
