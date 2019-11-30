@@ -194,65 +194,52 @@ import { createEventDispatcher } from "svelte";
 const dispatch = createEventDispatcher();
 
 function submitBook() {
-  dispatch("submitBook", {
+  dispatch("Dispatch", {
     bookTitle,
     bookPrice,
     bookDescription
   })
 }
-```
 
-Muokataan sitten Book komponenttiä App.svelte:ssä niin, että funktion suoritus onnistuu ja lisätään napin kutsuttama funktio.
-```
 <!-- App.svelte -->
 
-function sellBook(event) {
-	const newBook = event.detail;
-	console.log(newBook);
+  function sellBook(event) {
+    const newBook = event.detail;
+    console.log(newBook);
 
-	books = [...books, newBook];
-	console.log(books);
+    books = [...books, newBook];
+    console.log(books);
 
-	title = "";
-	price = "";
-	description = "";
-}
+    title = "";
+    price = "";
+    description = "";
+  }
 
-<Book
-bookTitle={title}
-bookPrice={price}
-bookDescription={description}
-buttonText="Sell"
-on:submitBook={sellBook} />
+  <Book
+    bookTitle={title}
+    bookPrice={price}
+    bookDescription={description}
+    buttonText="Sell"
+    on:Dispatch={sellBook} />
 ```
 
 Laitetaan sitten ostetut kirjat näkyville käyttäen Svelten each toimintoa
 ```
 <!-- App.svelte -->
-
-{#each books as book}
-  <Book
-    bookTitle={book.bookTitle}
-    bookPrice={book.bookPrice}
-    bookDescription={book.bookDescription}
-    buttonText="Buy" />
-{/each}
+  {#if books.length === 0}
+    <p>No books</p>
+  {:else}
+    {#each books as book}
+      <Book
+        bookTitle={book.bookTitle}
+        bookPrice={book.bookPrice}
+        bookDescription={book.bookDescription}
+        buttonText="Buy" />
+    {/each}
+  {/if}
 ```
 
-Herkutellaan hieman Svelten toiminnallisuuksilla ja lisätään {#if} äsken tehtyyn luetteloon
-```
-<!-- App.svelte -->
-
-{#if books.length === 0}
-  <p>No books</p>
-{:else}
-
-<!-- EACH -->
-
-{/if}
-```
-
-Lisää! Käyttäjä ystävällistä toiminnallisuutta Book komponenttiin
+Käyttäjä ystävällistä toiminnallisuutta Book komponenttiin
 ```
 <!-- Book.svelte -->
 
