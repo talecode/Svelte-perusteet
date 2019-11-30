@@ -279,12 +279,6 @@ function buyBook(event) {} // Kutsu tätä Buy napista
 #### Tehtävä
 Tee tehtava.gif mukainen toiminnallisuus ja näkymä annettuihin harjoitus lähtöihin, jotka on kommentoitu koodi esimerkkiin. Jos et ollut tunnilla niin lataa esimerkki ``` git clone https://github.com/talecode/Svelte.git ```.
 
-Vinkkejä:
-
-[$: total](https://svelte.dev/examples#reactive-declarations) on muuttuja, joka muuttuu automaattisesti, kun jokin siihen liityvä toinen muuttuja muuttuu. Sillä on tarkoitus laskea kokonaissumma ostetuista kirjoista. 
-
-buyBook funktiolla handlataan ostetun kirjan lisääminen listaan. 
-
-Näkymäksi riittää yksinkertainen lista niin kuin gifissä näkyy.
+Vinkki - [$: total](https://svelte.dev/examples#reactive-declarations) on muuttuja, joka muuttuu automaattisesti, kun jokin siihen liityvä toinen muuttuja muuttuu. Sillä on tarkoitus laskea kokonaissumma ostetuista kirjoista. 
 
 Palauta tehtävän koodit zipattuna (kaikki muu paitsi node_modules).
