@@ -9,7 +9,7 @@
   const dispatch = createEventDispatcher();
 
   function submitBook() {
-    dispatch("submitBook", {
+    dispatch("Dispatch", {
       bookTitle,
       bookPrice,
       bookDescription

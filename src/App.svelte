@@ -18,14 +18,6 @@
     price = "";
     description = "";
   }
-
-  // TEHTÄVÄ
-  let buyedBooks = [];
-
-  $: total = "";
-
-  function buyBook(event) {}
-  // TEHTÄVÄ
 </script>
 
 <style>
@@ -52,7 +44,7 @@
     bookPrice={price}
     bookDescription={description}
     buttonText="Sell"
-    on:submitBook={sellBook} />
+    on:Dispatch={sellBook} />
 </section>
 
 <hr />
@@ -69,7 +61,7 @@
         bookPrice={book.bookPrice}
         bookDescription={book.bookDescription}
         buttonText="Buy"
-        on:submitBook={buyBook} />
+        on:Dispatch={() => {}} />
     {/each}
   {/if}
 </section>
