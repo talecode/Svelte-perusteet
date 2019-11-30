@@ -93,9 +93,7 @@ npm run dev
 
 Korvataan boilerplate koodit App.svelte:stä ja lisätään yksi uusi komponentti - Book.svelte
 ```
-<!-- App.svelte -->
 <script>
-
   import Book from "./Book.svelte";
 
   let title = "";
@@ -103,23 +101,28 @@ Korvataan boilerplate koodit App.svelte:stä ja lisätään yksi uusi komponentt
   let description = "";
 
   let books = [];
-
 </script>
 
-section {
-  width: 30rem;
-  margin: auto;
-}
-input {
-  width: 100%;
-}
+<style>
+  section {
+    width: 30rem;
+    margin: auto;
+  }
+  input {
+    width: 100%;
+  }
+</style>
 
 <section>
   <h1>Sell your book!</h1>
   <input type="text" id="title" placeholder="Title" value={title} />
   <input type="number" id="price" placeholder="Price" value={price} />
   <input type="text" id="title" placeholder="Description" value={description} />
-  <Book bookTitle={title} bookPrice={price} bookDescription={description} buttonText="Sell" />
+  <Book
+    bookTitle={title}
+    bookPrice={price}
+    bookDescription={description}
+    buttonText="Sell" />
 </section>
 
 <hr />
@@ -127,12 +130,11 @@ input {
 <section>
   <h1>Books in sale!</h1>
 </section>
+
 ```
 
 ./scr juureen.
 ```
-<!-- Book.svelte -->
-
 <script>
   export let bookTitle;
   export let bookPrice;
