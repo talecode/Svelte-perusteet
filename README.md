@@ -17,7 +17,7 @@
 <a id='11'></a>
 ### [1.1 Perusteet](#svelte)
 
-Svelte on uudenlainen "framework" joka toimii oikeastaan vain kääntäjänä(compiler). Sveltellä rakennettu sovellus kootaan etukäteen(is compiled beforehand), hyvin optimoiduksi standalone JavaScriptiksi. Tämän ansiosta selaimen suorittama työ saadaan paljon pienemmäksi, kun verrataan perinteisillä frameworkeillä toteutettuihin web-sovelluksiin, joissa selain suorittaa myös frameworkin omaa koodia. 
+Svelte on uudenlainen "framework" joka toimii oikeastaan vain kääntäjänä(compiler). Sveltellä rakennettu sovellus käännetään etukäteen(is compiled beforehand), hyvin optimoiduksi standalone JavaScriptiksi. Tämän ansiosta selaimen suorittama työ saadaan paljon pienemmäksi, kun verrataan perinteisillä frameworkeillä toteutettuihin web-sovelluksiin, joissa selain suorittaa myös frameworkin omaa koodia. 
 
 Monet perinteiset frameworkit käyttää virtual-DOM tekniikka, mutta Svelte muokkaa DOM:ia suoraan, kun sovelluksen state muuttuu. Kuten Svelten sivustolla on kuvattu, DOM muutos tehdään [kirurgisesti](https://svelte.dev/).
 
