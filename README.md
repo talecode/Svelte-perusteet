@@ -273,6 +273,6 @@ Lopuksi lisätään lähdöt tehtävälle...
 #### Tehtävä
 Tee tehtava.gif mukainen toiminnallisuus ja näkymä. Jos et ollut tunnilla niin lataa esimerkki ``` git clone https://github.com/talecode/Svelte.git ```.
 
-Vinkki - [$: total](https://svelte.dev/examples#reactive-declarations) on muuttuja, joka muuttuu automaattisesti, kun jokin siihen liityvä toinen muuttuja muuttuu. Sillä on tarkoitus laskea kokonaissumma ostetuista kirjoista. 
+Vinkki - [$: muuttujanNimi](https://svelte.dev/examples#reactive-declarations) on muuttuja, joka muuttuu automaattisesti, kun jokin siihen liityvä toinen muuttuja muuttuu. Sillä on tarkoitus laskea kokonaissumma ostetuista kirjoista. 
 
 Palauta tehtävän koodit zipattuna (kaikki muu paitsi node_modules).
