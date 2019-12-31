@@ -1,4 +1,5 @@
-# Web sovelluskehitys 2 kurssi tehtävä - Svelte
+# Web-sovelluskehitys 2 opintojakso
+# Harjoitustehtävä - Svelte
 
 ## [1 Svelte](#1)
 
